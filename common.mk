@@ -138,6 +138,8 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
