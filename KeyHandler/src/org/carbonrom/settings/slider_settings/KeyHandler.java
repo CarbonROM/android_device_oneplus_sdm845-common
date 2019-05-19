@@ -42,6 +42,7 @@ import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
+import com.android.internal.util.cr.CrUtils;
 
 import org.carbonrom.settings.slider_settings.utils.Constants;
 
@@ -112,9 +113,15 @@ public class KeyHandler implements DeviceKeyHandler {
         if (event.getAction() != KeyEvent.ACTION_UP) {
             return null;
         }
-
-        mAudioManager.setRingerModeInternal(sSupportedSliderRingModes.get(keyCodeValue));
-        mNotificationManager.setZenMode(sSupportedSliderZenModes.get(keyCodeValue), null, TAG);
+        Log.d("KeyHandler", "Key code value: " + keyCodeValue );
+	if(sSupportedSliderRingModes.get(keyCodeValue) != 0) {
+            Log.d("KeyHandler", "Non torch found!");
+            mAudioManager.setRingerModeInternal(sSupportedSliderRingModes.get(keyCodeValue));
+            mNotificationManager.setZenMode(sSupportedSliderZenModes.get(keyCodeValue), null, TAG);
+        } else {
+            Log.d("KeyHandler", "Toggling flash");
+            CrUtils.toggleCameraFlash();
+        }
         doHapticFeedback();
         return null;
     }
