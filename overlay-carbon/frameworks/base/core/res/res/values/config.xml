@@ -64,4 +64,7 @@
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
+
+    <!-- Enable for devices with higher aspect ratio screen. -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 </resources>
