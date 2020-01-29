@@ -1,9 +1,7 @@
 [
   {
-    "remote": "lineage",
-    "repository": "LineageOS/android_kernel_oneplus_sdm845",
-    "target_path": "kernel/oneplus/sdm845",
-    "revision": "lineage-17.0"
+    "repository": "CarbonROM/android_kernel_oneplus_sdm845",
+    "target_path": "kernel/oneplus/sdm845"
   },
   {
     "remote": "lineage",
