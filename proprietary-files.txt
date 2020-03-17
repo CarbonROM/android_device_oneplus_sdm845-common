@@ -78,8 +78,8 @@ product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8b29
+# Telephony (qti-telephony-common)
+product/framework/qti-telephony-common.jar|64cfd316d246dd890857dcd1c853e75be4ad5d3e
 
 # WiFi Display
 bin/wfdservice
